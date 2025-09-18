@@ -1,0 +1,111 @@
+CRITICAL - 2025-09-11 08:38:55 --> ErrorException: Undefined property: App\Controllers\Buku::$bukuModel
+[Method: GET, Route: buku]
+in APPPATH\Controllers\Buku.php on line 18.
+ 1 APPPATH\Controllers\Buku.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Buku::$bukuModel', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Controllers\\Buku.php', 18)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-11 08:38:58 --> ErrorException: Undefined property: App\Controllers\Buku::$bukuModel
+[Method: GET, Route: buku]
+in APPPATH\Controllers\Buku.php on line 18.
+ 1 APPPATH\Controllers\Buku.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Buku::$bukuModel', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Controllers\\Buku.php', 18)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-11 08:38:58 --> ErrorException: Undefined property: App\Controllers\Buku::$bukuModel
+[Method: GET, Route: buku]
+in APPPATH\Controllers\Buku.php on line 18.
+ 1 APPPATH\Controllers\Buku.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Buku::$bukuModel', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Controllers\\Buku.php', 18)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-11 08:38:59 --> ErrorException: Undefined property: App\Controllers\Buku::$bukuModel
+[Method: GET, Route: buku]
+in APPPATH\Controllers\Buku.php on line 18.
+ 1 APPPATH\Controllers\Buku.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Buku::$bukuModel', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Controllers\\Buku.php', 18)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-11 08:39:56 --> ErrorException: Undefined property: App\Controllers\Buku::$bukuModel
+[Method: GET, Route: buku]
+in APPPATH\Controllers\Buku.php on line 18.
+ 1 APPPATH\Controllers\Buku.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Buku::$bukuModel', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Controllers\\Buku.php', 18)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-11 08:54:55 --> Error: Call to undefined method CodeIgniter\View\View::extends()
+[Method: GET, Route: buku/1]
+in APPPATH\Views\buku\detail.php on line 1.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 4 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('1')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-11 09:01:39 --> Error: Call to undefined method CodeIgniter\View\View::extends()
+[Method: GET, Route: buku/1]
+in APPPATH\Views\buku\detail.php on line 1.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 4 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('1')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-11 09:07:34 --> Error: Call to undefined method CodeIgniter\View\View::extends()
+[Method: GET, Route: buku/1]
+in APPPATH\Views\buku\detail.php on line 1.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 4 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('1')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-11 14:04:26 --> Error: Call to undefined method CodeIgniter\View\View::extends()
+[Method: GET, Route: buku/2]
+in APPPATH\Views\buku\detail.php on line 1.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 4 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('2')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')

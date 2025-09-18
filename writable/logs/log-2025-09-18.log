@@ -1,0 +1,1831 @@
+ERROR - 2025-09-18 05:14:27 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\system\Database\MySQLi\Connection.php:202
+Stack trace:
+#0 C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\system\Database\MySQLi\Connection.php(202): mysqli->real_connect('localhost', 'root', '', 'pustaka', 3306, '', 0)
+#1 C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\app\Models\BukuModel.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\app\Controllers\Buku.php(18): App\Models\BukuModel->getBuku()
+#8 C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\system\CodeIgniter.php(933): App\Controllers\Buku->index()
+#9 C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#10 C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\system\rewrite.php(44): require_once('C:\\Users\\prata\\...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\app\Models\BukuModel.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\app\Controllers\Buku.php(18): App\Models\BukuModel->getBuku()
+#7 C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\system\CodeIgniter.php(933): App\Controllers\Buku->index()
+#8 C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#9 C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\system\rewrite.php(44): require_once('C:\\Users\\prata\\...')
+#14 {main}
+CRITICAL - 2025-09-18 05:14:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: buku]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `buku`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BukuModel.php(13): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Buku.php(18): App\Models\BukuModel->getBuku()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:10:27 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:13:32 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:16:50 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:17:21 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:17:21 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:17:22 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:17:22 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:17:23 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:17:23 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:17:23 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:17:24 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:17:24 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:17:24 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:17:25 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:17:25 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:17:25 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:18:03 --> CodeIgniter\Session\Exceptions\SessionException: Session: Configured save path "C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\writable\session" is not writable by the PHP process.
+[Method: GET, Route: buku/tambah]
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 103.
+ 1 SYSTEMPATH\Session\Handlers\FileHandler.php(103): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\writable\\session')
+ 2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\writable\\session', 'ci_session')
+ 3 SYSTEMPATH\Session\Session.php(912): session_start()
+ 4 SYSTEMPATH\Session\Session.php(243): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH\Config\Services.php(715): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 7 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 SYSTEMPATH\Common.php(995): CodeIgniter\Config\BaseService::get('session')
+12 SYSTEMPATH\Common.php(968): service('session')
+13 SYSTEMPATH\Common.php(819): session()
+14 APPPATH\Views\buku\tambah.php(18): old('pengarang')
+15 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\tambah.php')
+16 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+17 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/tambah', [], true)
+18 APPPATH\Controllers\Buku.php(39): view('buku/tambah', [...])
+19 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->tambah()
+20 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+21 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+24 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+25 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:18:51 --> CodeIgniter\Session\Exceptions\SessionException: Session: Configured save path "C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\writable\session" is not writable by the PHP process.
+[Method: GET, Route: buku/tambah]
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 103.
+ 1 SYSTEMPATH\Session\Handlers\FileHandler.php(103): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\writable\\session')
+ 2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\writable\\session', 'ci_session')
+ 3 SYSTEMPATH\Session\Session.php(912): session_start()
+ 4 SYSTEMPATH\Session\Session.php(243): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH\Config\Services.php(715): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 7 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 SYSTEMPATH\Common.php(995): CodeIgniter\Config\BaseService::get('session')
+12 SYSTEMPATH\Common.php(968): service('session')
+13 SYSTEMPATH\Common.php(819): session()
+14 APPPATH\Views\buku\tambah.php(18): old('pengarang')
+15 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\tambah.php')
+16 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+17 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/tambah', [], true)
+18 APPPATH\Controllers\Buku.php(39): view('buku/tambah', [...])
+19 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->tambah()
+20 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+21 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+24 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+25 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:18:53 --> CodeIgniter\Session\Exceptions\SessionException: Session: Configured save path "C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\writable\session" is not writable by the PHP process.
+[Method: GET, Route: buku/tambah]
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 103.
+ 1 SYSTEMPATH\Session\Handlers\FileHandler.php(103): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\writable\\session')
+ 2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\writable\\session', 'ci_session')
+ 3 SYSTEMPATH\Session\Session.php(912): session_start()
+ 4 SYSTEMPATH\Session\Session.php(243): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH\Config\Services.php(715): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 7 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 SYSTEMPATH\Common.php(995): CodeIgniter\Config\BaseService::get('session')
+12 SYSTEMPATH\Common.php(968): service('session')
+13 SYSTEMPATH\Common.php(819): session()
+14 APPPATH\Views\buku\tambah.php(18): old('pengarang')
+15 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\tambah.php')
+16 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+17 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/tambah', [], true)
+18 APPPATH\Controllers\Buku.php(39): view('buku/tambah', [...])
+19 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->tambah()
+20 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+21 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+24 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+25 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:18:53 --> CodeIgniter\Session\Exceptions\SessionException: Session: Configured save path "C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\writable\session" is not writable by the PHP process.
+[Method: GET, Route: buku/tambah]
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 103.
+ 1 SYSTEMPATH\Session\Handlers\FileHandler.php(103): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\writable\\session')
+ 2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\writable\\session', 'ci_session')
+ 3 SYSTEMPATH\Session\Session.php(912): session_start()
+ 4 SYSTEMPATH\Session\Session.php(243): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH\Config\Services.php(715): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 7 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 SYSTEMPATH\Common.php(995): CodeIgniter\Config\BaseService::get('session')
+12 SYSTEMPATH\Common.php(968): service('session')
+13 SYSTEMPATH\Common.php(819): session()
+14 APPPATH\Views\buku\tambah.php(18): old('pengarang')
+15 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\tambah.php')
+16 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+17 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/tambah', [], true)
+18 APPPATH\Controllers\Buku.php(39): view('buku/tambah', [...])
+19 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->tambah()
+20 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+21 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+24 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+25 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:18:54 --> CodeIgniter\Session\Exceptions\SessionException: Session: Configured save path "C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\writable\session" is not writable by the PHP process.
+[Method: GET, Route: buku/tambah]
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 103.
+ 1 SYSTEMPATH\Session\Handlers\FileHandler.php(103): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\writable\\session')
+ 2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\writable\\session', 'ci_session')
+ 3 SYSTEMPATH\Session\Session.php(912): session_start()
+ 4 SYSTEMPATH\Session\Session.php(243): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH\Config\Services.php(715): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 7 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 SYSTEMPATH\Common.php(995): CodeIgniter\Config\BaseService::get('session')
+12 SYSTEMPATH\Common.php(968): service('session')
+13 SYSTEMPATH\Common.php(819): session()
+14 APPPATH\Views\buku\tambah.php(18): old('pengarang')
+15 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\tambah.php')
+16 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+17 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/tambah', [], true)
+18 APPPATH\Controllers\Buku.php(39): view('buku/tambah', [...])
+19 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->tambah()
+20 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+21 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+24 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+25 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:18:54 --> CodeIgniter\Session\Exceptions\SessionException: Session: Configured save path "C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\writable\session" is not writable by the PHP process.
+[Method: GET, Route: buku/tambah]
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 103.
+ 1 SYSTEMPATH\Session\Handlers\FileHandler.php(103): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\writable\\session')
+ 2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\writable\\session', 'ci_session')
+ 3 SYSTEMPATH\Session\Session.php(912): session_start()
+ 4 SYSTEMPATH\Session\Session.php(243): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH\Config\Services.php(715): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 7 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 SYSTEMPATH\Common.php(995): CodeIgniter\Config\BaseService::get('session')
+12 SYSTEMPATH\Common.php(968): service('session')
+13 SYSTEMPATH\Common.php(819): session()
+14 APPPATH\Views\buku\tambah.php(18): old('pengarang')
+15 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\tambah.php')
+16 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+17 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/tambah', [], true)
+18 APPPATH\Controllers\Buku.php(39): view('buku/tambah', [...])
+19 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->tambah()
+20 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+21 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+24 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+25 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:18:55 --> CodeIgniter\Session\Exceptions\SessionException: Session: Configured save path "C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\writable\session" is not writable by the PHP process.
+[Method: GET, Route: buku/tambah]
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 103.
+ 1 SYSTEMPATH\Session\Handlers\FileHandler.php(103): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\writable\\session')
+ 2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\writable\\session', 'ci_session')
+ 3 SYSTEMPATH\Session\Session.php(912): session_start()
+ 4 SYSTEMPATH\Session\Session.php(243): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH\Config\Services.php(715): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 7 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 SYSTEMPATH\Common.php(995): CodeIgniter\Config\BaseService::get('session')
+12 SYSTEMPATH\Common.php(968): service('session')
+13 SYSTEMPATH\Common.php(819): session()
+14 APPPATH\Views\buku\tambah.php(18): old('pengarang')
+15 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\tambah.php')
+16 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+17 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/tambah', [], true)
+18 APPPATH\Controllers\Buku.php(39): view('buku/tambah', [...])
+19 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->tambah()
+20 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+21 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+24 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+25 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:18:55 --> CodeIgniter\Session\Exceptions\SessionException: Session: Configured save path "C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\writable\session" is not writable by the PHP process.
+[Method: GET, Route: buku/tambah]
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 103.
+ 1 SYSTEMPATH\Session\Handlers\FileHandler.php(103): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\writable\\session')
+ 2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\writable\\session', 'ci_session')
+ 3 SYSTEMPATH\Session\Session.php(912): session_start()
+ 4 SYSTEMPATH\Session\Session.php(243): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH\Config\Services.php(715): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 7 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 SYSTEMPATH\Common.php(995): CodeIgniter\Config\BaseService::get('session')
+12 SYSTEMPATH\Common.php(968): service('session')
+13 SYSTEMPATH\Common.php(819): session()
+14 APPPATH\Views\buku\tambah.php(18): old('pengarang')
+15 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\tambah.php')
+16 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+17 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/tambah', [], true)
+18 APPPATH\Controllers\Buku.php(39): view('buku/tambah', [...])
+19 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->tambah()
+20 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+21 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+24 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+25 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:18:55 --> CodeIgniter\Session\Exceptions\SessionException: Session: Configured save path "C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\writable\session" is not writable by the PHP process.
+[Method: GET, Route: buku/tambah]
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 103.
+ 1 SYSTEMPATH\Session\Handlers\FileHandler.php(103): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\writable\\session')
+ 2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\writable\\session', 'ci_session')
+ 3 SYSTEMPATH\Session\Session.php(912): session_start()
+ 4 SYSTEMPATH\Session\Session.php(243): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH\Config\Services.php(715): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 7 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 SYSTEMPATH\Common.php(995): CodeIgniter\Config\BaseService::get('session')
+12 SYSTEMPATH\Common.php(968): service('session')
+13 SYSTEMPATH\Common.php(819): session()
+14 APPPATH\Views\buku\tambah.php(18): old('pengarang')
+15 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\tambah.php')
+16 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+17 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/tambah', [], true)
+18 APPPATH\Controllers\Buku.php(39): view('buku/tambah', [...])
+19 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->tambah()
+20 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+21 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+24 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+25 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:18:56 --> CodeIgniter\Session\Exceptions\SessionException: Session: Configured save path "C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\writable\session" is not writable by the PHP process.
+[Method: GET, Route: buku/tambah]
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 103.
+ 1 SYSTEMPATH\Session\Handlers\FileHandler.php(103): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\writable\\session')
+ 2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\writable\\session', 'ci_session')
+ 3 SYSTEMPATH\Session\Session.php(912): session_start()
+ 4 SYSTEMPATH\Session\Session.php(243): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH\Config\Services.php(715): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 7 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 SYSTEMPATH\Common.php(995): CodeIgniter\Config\BaseService::get('session')
+12 SYSTEMPATH\Common.php(968): service('session')
+13 SYSTEMPATH\Common.php(819): session()
+14 APPPATH\Views\buku\tambah.php(18): old('pengarang')
+15 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\tambah.php')
+16 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+17 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/tambah', [], true)
+18 APPPATH\Controllers\Buku.php(39): view('buku/tambah', [...])
+19 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->tambah()
+20 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+21 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+24 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+25 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:18:56 --> CodeIgniter\Session\Exceptions\SessionException: Session: Configured save path "C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\writable\session" is not writable by the PHP process.
+[Method: GET, Route: buku/tambah]
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 103.
+ 1 SYSTEMPATH\Session\Handlers\FileHandler.php(103): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\writable\\session')
+ 2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\writable\\session', 'ci_session')
+ 3 SYSTEMPATH\Session\Session.php(912): session_start()
+ 4 SYSTEMPATH\Session\Session.php(243): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH\Config\Services.php(715): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 7 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 SYSTEMPATH\Common.php(995): CodeIgniter\Config\BaseService::get('session')
+12 SYSTEMPATH\Common.php(968): service('session')
+13 SYSTEMPATH\Common.php(819): session()
+14 APPPATH\Views\buku\tambah.php(18): old('pengarang')
+15 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\tambah.php')
+16 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+17 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/tambah', [], true)
+18 APPPATH\Controllers\Buku.php(39): view('buku/tambah', [...])
+19 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->tambah()
+20 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+21 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+24 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+25 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:18:57 --> CodeIgniter\Session\Exceptions\SessionException: Session: Configured save path "C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\writable\session" is not writable by the PHP process.
+[Method: GET, Route: buku/tambah]
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 103.
+ 1 SYSTEMPATH\Session\Handlers\FileHandler.php(103): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\writable\\session')
+ 2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\writable\\session', 'ci_session')
+ 3 SYSTEMPATH\Session\Session.php(912): session_start()
+ 4 SYSTEMPATH\Session\Session.php(243): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH\Config\Services.php(715): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 7 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 SYSTEMPATH\Common.php(995): CodeIgniter\Config\BaseService::get('session')
+12 SYSTEMPATH\Common.php(968): service('session')
+13 SYSTEMPATH\Common.php(819): session()
+14 APPPATH\Views\buku\tambah.php(18): old('pengarang')
+15 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\tambah.php')
+16 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+17 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/tambah', [], true)
+18 APPPATH\Controllers\Buku.php(39): view('buku/tambah', [...])
+19 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->tambah()
+20 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+21 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+24 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+25 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:18:57 --> CodeIgniter\Session\Exceptions\SessionException: Session: Configured save path "C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\writable\session" is not writable by the PHP process.
+[Method: GET, Route: buku/tambah]
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 103.
+ 1 SYSTEMPATH\Session\Handlers\FileHandler.php(103): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\writable\\session')
+ 2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\writable\\session', 'ci_session')
+ 3 SYSTEMPATH\Session\Session.php(912): session_start()
+ 4 SYSTEMPATH\Session\Session.php(243): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH\Config\Services.php(715): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 7 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 SYSTEMPATH\Common.php(995): CodeIgniter\Config\BaseService::get('session')
+12 SYSTEMPATH\Common.php(968): service('session')
+13 SYSTEMPATH\Common.php(819): session()
+14 APPPATH\Views\buku\tambah.php(18): old('pengarang')
+15 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\tambah.php')
+16 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+17 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/tambah', [], true)
+18 APPPATH\Controllers\Buku.php(39): view('buku/tambah', [...])
+19 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->tambah()
+20 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+21 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+24 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+25 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:19:22 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:19:23 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:20:33 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:20:34 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:20:34 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:20:34 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:20:35 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:20:35 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:20:35 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:20:36 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:20:36 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:20:36 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:20:37 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:21:25 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:27:17 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:32:32 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/detail]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('detail')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:32:44 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/detail]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('detail')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:32:50 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:35:19 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 06:58:45 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 07:09:49 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/tambah]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('tambah')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 07:12:36 --> CodeIgniter\Session\Exceptions\SessionException: Session: Configured save path "C:\Users\prata\OneDrive - pnc.ac.id\Documents\Project\P Web 2\CI\writable\session" is not writable by the PHP process.
+[Method: GET, Route: buku/tambah]
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 103.
+ 1 SYSTEMPATH\Session\Handlers\FileHandler.php(103): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\writable\\session')
+ 2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\writable\\session', 'ci_session')
+ 3 SYSTEMPATH\Session\Session.php(912): session_start()
+ 4 SYSTEMPATH\Session\Session.php(243): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH\Config\Services.php(715): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 7 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 SYSTEMPATH\Common.php(995): CodeIgniter\Config\BaseService::get('session')
+12 SYSTEMPATH\Common.php(968): service('session')
+13 SYSTEMPATH\Common.php(819): session()
+14 APPPATH\Views\buku\tambah.php(18): old('pengarang')
+15 SYSTEMPATH\View\View.php(226): include('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\app\\Views\\buku\\tambah.php')
+16 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+17 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/tambah', [], true)
+18 APPPATH\Controllers\Buku.php(39): view('buku/tambah', [...])
+19 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->tambah()
+20 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+21 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+24 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+25 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 07:18:36 --> CodeIgniter\Session\Exceptions\SessionException: Session: Configured save path "C:\laragon\www\CI\writable\session" is not writable by the PHP process.
+[Method: GET, Route: buku/tambah]
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 103.
+ 1 SYSTEMPATH\Session\Handlers\FileHandler.php(103): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath('C:\\laragon\\www\\CI\\writable\\session')
+ 2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open('C:\\laragon\\www\\CI\\writable\\session', 'ci_session')
+ 3 SYSTEMPATH\Session\Session.php(912): session_start()
+ 4 SYSTEMPATH\Session\Session.php(243): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH\Config\Services.php(715): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 7 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 SYSTEMPATH\Common.php(995): CodeIgniter\Config\BaseService::get('session')
+12 SYSTEMPATH\Common.php(968): service('session')
+13 SYSTEMPATH\Common.php(819): session()
+14 APPPATH\Views\buku\tambah.php(18): old('pengarang')
+15 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\CI\\app\\Views\\buku\\tambah.php')
+16 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+17 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/tambah', [], true)
+18 APPPATH\Controllers\Buku.php(39): view('buku/tambah', [...])
+19 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->tambah()
+20 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+21 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+24 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+25 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 07:20:07 --> CodeIgniter\Session\Exceptions\SessionException: Session: Configured save path "C:\laragon\www\CI\writable\session" is not writable by the PHP process.
+[Method: GET, Route: buku/tambah]
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 103.
+ 1 SYSTEMPATH\Session\Handlers\FileHandler.php(103): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath('C:\\laragon\\www\\CI\\writable\\session')
+ 2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open('C:\\laragon\\www\\CI\\writable\\session', 'ci_session')
+ 3 SYSTEMPATH\Session\Session.php(912): session_start()
+ 4 SYSTEMPATH\Session\Session.php(243): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH\Config\Services.php(715): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 7 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 SYSTEMPATH\Common.php(995): CodeIgniter\Config\BaseService::get('session')
+12 SYSTEMPATH\Common.php(968): service('session')
+13 SYSTEMPATH\Common.php(819): session()
+14 APPPATH\Views\buku\tambah.php(18): old('pengarang')
+15 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\CI\\app\\Views\\buku\\tambah.php')
+16 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+17 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/tambah', [], true)
+18 APPPATH\Controllers\Buku.php(39): view('buku/tambah', [...])
+19 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->tambah()
+20 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+21 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+24 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+25 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\CI\\public\\index.php')
+DEBUG - 2025-09-18 07:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-18 07:21:33 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/template.php"
+[Method: GET, Route: buku/tambah]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/template.php')
+ 2 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout/template', [], true)
+ 3 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/tambah', [], true)
+ 4 APPPATH\Controllers\Buku.php(39): view('buku/tambah', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->tambah()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\CI\\public\\index.php')
+DEBUG - 2025-09-18 07:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-18 07:21:35 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/template.php"
+[Method: GET, Route: buku/tambah]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/template.php')
+ 2 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout/template', [], true)
+ 3 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/tambah', [], true)
+ 4 APPPATH\Controllers\Buku.php(39): view('buku/tambah', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->tambah()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\CI\\public\\index.php')
+DEBUG - 2025-09-18 07:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-18 07:21:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/template.php"
+[Method: GET, Route: buku/tambah]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/template.php')
+ 2 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout/template', [], true)
+ 3 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/tambah', [], true)
+ 4 APPPATH\Controllers\Buku.php(39): view('buku/tambah', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->tambah()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\CI\\public\\index.php')
+DEBUG - 2025-09-18 07:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-18 07:21:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/template.php"
+[Method: GET, Route: buku/tambah]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/template.php')
+ 2 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout/template', [], true)
+ 3 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/tambah', [], true)
+ 4 APPPATH\Controllers\Buku.php(39): view('buku/tambah', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->tambah()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\CI\\public\\index.php')
+DEBUG - 2025-09-18 07:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-18 07:21:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/template.php"
+[Method: GET, Route: buku/tambah]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/template.php')
+ 2 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout/template', [], true)
+ 3 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/tambah', [], true)
+ 4 APPPATH\Controllers\Buku.php(39): view('buku/tambah', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->tambah()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\CI\\public\\index.php')
+DEBUG - 2025-09-18 07:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-18 07:21:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/template.php"
+[Method: GET, Route: buku/tambah]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/template.php')
+ 2 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout/template', [], true)
+ 3 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/tambah', [], true)
+ 4 APPPATH\Controllers\Buku.php(39): view('buku/tambah', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->tambah()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\CI\\public\\index.php')
+DEBUG - 2025-09-18 07:22:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 07:24:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 07:26:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-18 07:27:11 --> mysqli_sql_exception: Column 'tahun_terbit' cannot be null in C:\laragon\www\CI\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\CI\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `bu...', 0)
+#1 C:\laragon\www\CI\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bu...')
+#2 C:\laragon\www\CI\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bu...')
+#3 C:\laragon\www\CI\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bu...', Array, false)
+#4 C:\laragon\www\CI\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\CI\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\CI\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\CI\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\CI\app\Controllers\Buku.php(61): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\CI\system\CodeIgniter.php(933): App\Controllers\Buku->simpan()
+#10 C:\laragon\www\CI\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#11 C:\laragon\www\CI\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\CI\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\CI\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\CI\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\laragon\www\CI\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#16 {main}
+CRITICAL - 2025-09-18 07:27:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'tahun_terbit' cannot be null
+[Method: POST, Route: buku/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `buku` (`judul`, `pengarang`, `penerbit`, `tahun_terbit`) VALUES (:judul:, :pengarang:, :penerbit:, :tahun_terbit:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Buku.php(61): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->simpan()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 07:27:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'tahun_terbit' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `buku` (`judul`, `pengarang`, `penerbit`, `tahun_terbit`) VALUES (\'pengusaha muda\', \'lklkl\', \'aku\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `buku` (`judul`, `pengarang`, `penerbit`, `tahun_terbit`) VALUES (\'pengusaha muda\', \'lklkl\', \'aku\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `buku` (`judul`, `pengarang`, `penerbit`, `tahun_terbit`) VALUES (:judul:, :pengarang:, :penerbit:, :tahun_terbit:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Buku.php(61): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->simpan()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 07:27:11 --> [Caused by] mysqli_sql_exception: Column 'tahun_terbit' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `buku` (`judul`, `pengarang`, `penerbit`, `tahun_terbit`) VALUES (\'pengusaha muda\', \'lklkl\', \'aku\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `buku` (`judul`, `pengarang`, `penerbit`, `tahun_terbit`) VALUES (\'pengusaha muda\', \'lklkl\', \'aku\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `buku` (`judul`, `pengarang`, `penerbit`, `tahun_terbit`) VALUES (\'pengusaha muda\', \'lklkl\', \'aku\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `buku` (`judul`, `pengarang`, `penerbit`, `tahun_terbit`) VALUES (:judul:, :pengarang:, :penerbit:, :tahun_terbit:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Buku.php(61): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->simpan()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\CI\\public\\index.php')
+DEBUG - 2025-09-18 07:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 07:31:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 07:31:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 07:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 07:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 07:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 07:45:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 07:48:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 07:48:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 07:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 07:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:04:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:04:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:05:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:09:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:32:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:46:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-18 08:46:41 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/index.php]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('index.php')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\CI\\public\\index.php')
+DEBUG - 2025-09-18 08:47:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:47:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:47:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:47:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-18 08:47:06 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/7]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('7')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\CI\\public\\index.php')
+DEBUG - 2025-09-18 08:47:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:47:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-18 08:47:07 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/6]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('6')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\CI\\public\\index.php')
+DEBUG - 2025-09-18 08:47:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:47:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:47:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:47:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:47:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:47:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:47:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:47:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:47:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:51:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:51:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:52:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:55:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:55:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:55:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:55:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:55:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:56:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:56:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:56:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:56:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:58:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:59:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 08:59:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-18 08:59:45 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/index.php]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('index.php')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\CI\\public\\index.php')
+DEBUG - 2025-09-18 09:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:01:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:01:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:01:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:01:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:02:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:02:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:03:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:03:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:03:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:03:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:03:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:03:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:04:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:04:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:04:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:04:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:04:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:05:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:05:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:05:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:05:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:05:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:05:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 09:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 10:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 10:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-18 10:33:08 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\laragon\www\CI\system\Database\MySQLi\Connection.php:202
+Stack trace:
+#0 C:\laragon\www\CI\system\Database\MySQLi\Connection.php(202): mysqli->real_connect('localhost', 'root', '', 'pustaka', 3306, '', 0)
+#1 C:\laragon\www\CI\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\CI\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\CI\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\CI\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\CI\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\CI\app\Models\BukuModel.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\CI\app\Controllers\Buku.php(18): App\Models\BukuModel->getBuku()
+#8 C:\laragon\www\CI\system\CodeIgniter.php(933): App\Controllers\Buku->index()
+#9 C:\laragon\www\CI\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#10 C:\laragon\www\CI\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\CI\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\CI\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\laragon\www\CI\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\laragon\www\CI\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\laragon\www\CI\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\CI\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\CI\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\CI\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\CI\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\CI\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\CI\app\Models\BukuModel.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\CI\app\Controllers\Buku.php(18): App\Models\BukuModel->getBuku()
+#7 C:\laragon\www\CI\system\CodeIgniter.php(933): App\Controllers\Buku->index()
+#8 C:\laragon\www\CI\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#9 C:\laragon\www\CI\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\CI\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\CI\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\laragon\www\CI\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\laragon\www\CI\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#14 {main}
+CRITICAL - 2025-09-18 10:33:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: buku]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `buku`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BukuModel.php(13): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Buku.php(18): App\Models\BukuModel->getBuku()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\CI\\public\\index.php')
+DEBUG - 2025-09-18 10:33:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 10:33:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 10:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 10:33:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 10:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 10:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:20:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:20:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:26:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:26:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:35:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:35:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:35:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-18 11:35:59 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/index.php]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(34): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('index.php')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\CI\\public\\index.php')
+DEBUG - 2025-09-18 11:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:36:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:36:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:36:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:36:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:36:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:36:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:36:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:37:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-18 11:37:13 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/index.php]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(34): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('index.php')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\CI\\public\\index.php')
+DEBUG - 2025-09-18 11:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-18 11:38:11 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/index.php]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('index.php')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\CI\\public\\index.php')
+DEBUG - 2025-09-18 11:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-18 11:38:15 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/index.php]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('index.php')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\CI\\public\\index.php')
+DEBUG - 2025-09-18 11:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-18 11:38:16 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: buku/index.php]
+in APPPATH\Views\buku\detail.php on line 10.
+ 1 APPPATH\Views\buku\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\CI\\app\\Views\\buku\\detail.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\CI\\app\\Views\\buku\\detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/detail', [], true)
+ 5 APPPATH\Controllers\Buku.php(30): view('buku/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->detail('index.php')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\CI\\public\\index.php')
+DEBUG - 2025-09-18 11:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:39:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:39:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:39:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:39:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:39:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:39:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:43:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:43:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:43:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:43:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:43:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:43:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:43:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:45:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:45:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:45:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:48:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:48:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:48:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:49:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:49:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-18 11:49:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/template.php"
+[Method: GET, Route: buku/tambah]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/template.php')
+ 2 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout/template', [], true)
+ 3 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('buku/tambah', [], true)
+ 4 APPPATH\Controllers\Buku.php(39): view('buku/tambah', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->tambah()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\CI\\public\\index.php')
+DEBUG - 2025-09-18 11:50:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:50:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:50:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:50:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-18 11:51:12 --> mysqli_sql_exception: Column 'tahun_terbit' cannot be null in C:\laragon\www\CI\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\CI\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `bu...', 0)
+#1 C:\laragon\www\CI\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bu...')
+#2 C:\laragon\www\CI\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bu...')
+#3 C:\laragon\www\CI\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bu...', Array, false)
+#4 C:\laragon\www\CI\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\CI\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\CI\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\CI\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\CI\app\Controllers\Buku.php(81): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\CI\system\CodeIgniter.php(933): App\Controllers\Buku->simpan()
+#10 C:\laragon\www\CI\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#11 C:\laragon\www\CI\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\CI\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\CI\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\CI\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\laragon\www\CI\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#16 {main}
+CRITICAL - 2025-09-18 11:51:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'tahun_terbit' cannot be null
+[Method: POST, Route: buku/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `buku` (`judul`, `pengarang`, `penerbit`, `tahun_terbit`, `sampul`) VALUES (:judul:, :pengarang:, :penerbit:, :tahun_terbit:, :sampul:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Buku.php(81): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->simpan()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 11:51:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'tahun_terbit' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `buku` (`judul`, `pengarang`, `penerbit`, `tahun_terbit`, `sampul`) VALUES (\'si kancil nyuri timunlu\', \'TamaPutra\', \'Gramedia\', NULL, \'1758196272_f485a32843c53a5118db.png\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `buku` (`judul`, `pengarang`, `penerbit`, `tahun_terbit`, `sampul`) VALUES (\'si kancil nyuri timunlu\', \'TamaPutra\', \'Gramedia\', NULL, \'1758196272_f485a32843c53a5118db.png\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `buku` (`judul`, `pengarang`, `penerbit`, `tahun_terbit`, `sampul`) VALUES (:judul:, :pengarang:, :penerbit:, :tahun_terbit:, :sampul:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Buku.php(81): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->simpan()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\CI\\public\\index.php')
+CRITICAL - 2025-09-18 11:51:12 --> [Caused by] mysqli_sql_exception: Column 'tahun_terbit' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `buku` (`judul`, `pengarang`, `penerbit`, `tahun_terbit`, `sampul`) VALUES (\'si kancil nyuri timunlu\', \'TamaPutra\', \'Gramedia\', NULL, \'1758196272_f485a32843c53a5118db.png\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `buku` (`judul`, `pengarang`, `penerbit`, `tahun_terbit`, `sampul`) VALUES (\'si kancil nyuri timunlu\', \'TamaPutra\', \'Gramedia\', NULL, \'1758196272_f485a32843c53a5118db.png\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `buku` (`judul`, `pengarang`, `penerbit`, `tahun_terbit`, `sampul`) VALUES (\'si kancil nyuri timunlu\', \'TamaPutra\', \'Gramedia\', NULL, \'1758196272_f485a32843c53a5118db.png\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `buku` (`judul`, `pengarang`, `penerbit`, `tahun_terbit`, `sampul`) VALUES (:judul:, :pengarang:, :penerbit:, :tahun_terbit:, :sampul:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Buku.php(81): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->simpan()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\CI\\public\\index.php')
+DEBUG - 2025-09-18 11:53:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:53:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:53:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:53:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:53:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:53:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:53:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:53:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:53:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:54:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:54:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 11:54:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:05:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:05:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:05:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:06:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:06:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:08:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:08:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:08:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:09:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:10:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:10:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:10:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:23:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:23:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:23:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:23:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:23:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:23:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:25:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-18 12:25:22 --> ErrorException: Undefined variable $id_buku
+[Method: PUT, Route: buku/ubah/4]
+in APPPATH\Controllers\Buku.php on line 175.
+ 1 APPPATH\Controllers\Buku.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_buku', 'C:\\laragon\\www\\CI\\app\\Controllers\\Buku.php', 175)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->update('4')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\CI\\public\\index.php')
+DEBUG - 2025-09-18 12:25:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-18 12:25:55 --> ErrorException: unlink(img/matematika.jpg): No such file or directory
+[Method: PUT, Route: buku/ubah/4]
+in APPPATH\Controllers\Buku.php on line 169.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/matematika.jpg): No such file or directory', 'C:\\laragon\\www\\CI\\app\\Controllers\\Buku.php', 169)
+ 2 APPPATH\Controllers\Buku.php(169): unlink('img/matematika.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->update('4')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\CI\\public\\index.php')
+DEBUG - 2025-09-18 12:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-18 12:27:50 --> ErrorException: unlink(img/matematika.jpg): No such file or directory
+[Method: PUT, Route: buku/ubah/4]
+in APPPATH\Controllers\Buku.php on line 169.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/matematika.jpg): No such file or directory', 'C:\\laragon\\www\\CI\\app\\Controllers\\Buku.php', 169)
+ 2 APPPATH\Controllers\Buku.php(169): unlink('img/matematika.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->update('4')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\CI\\public\\index.php')
+DEBUG - 2025-09-18 12:27:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:27:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:28:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:28:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:28:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:28:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:28:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-18 12:28:15 --> ErrorException: unlink(img/matematika.jpg): No such file or directory
+[Method: PUT, Route: buku/ubah/4]
+in APPPATH\Controllers\Buku.php on line 169.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/matematika.jpg): No such file or directory', 'C:\\laragon\\www\\CI\\app\\Controllers\\Buku.php', 169)
+ 2 APPPATH\Controllers\Buku.php(169): unlink('img/matematika.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->update('4')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\CI\\public\\index.php')
+DEBUG - 2025-09-18 12:28:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:30:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:30:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:31:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:31:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:31:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:31:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:32:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-18 12:32:04 --> ErrorException: unlink(img/matematika.jpg): No such file or directory
+[Method: PUT, Route: buku/ubah/4]
+in APPPATH\Controllers\Buku.php on line 169.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/matematika.jpg): No such file or directory', 'C:\\laragon\\www\\CI\\app\\Controllers\\Buku.php', 169)
+ 2 APPPATH\Controllers\Buku.php(169): unlink('img/matematika.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Buku->update('4')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\CI\\public\\index.php')
+DEBUG - 2025-09-18 12:32:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:32:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:32:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:32:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:32:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:32:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:33:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:33:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:33:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:33:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:34:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:34:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:34:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:34:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:35:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-18 12:37:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,10 @@
+CRITICAL - 2025-09-04 07:15:05 --> TypeError: App\Controllers\halaman::index(): Return value must be of type string, none returned
+[Method: GET, Route: /]
+in APPPATH\Controllers\halaman.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\halaman->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\halaman))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\prata\\OneDrive - pnc.ac.id\\Documents\\Project\\P Web 2\\CI\\public\\index.php')
