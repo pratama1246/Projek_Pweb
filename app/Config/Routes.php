@@ -8,6 +8,7 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'halaman::index');
 
 $routes->get('/buku', 'Buku::index');
+$routes->post('/buku', 'Buku::index');
 $routes->get('/buku/tambah', 'Buku::tambah');
 $routes->post('/buku/simpan', 'Buku::simpan');
 $routes->get('/buku/ubah/(:num)', 'Buku::ubah/$1');

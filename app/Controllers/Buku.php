@@ -16,7 +16,7 @@ class Buku extends BaseController{
         $current = $this->request->getVar('page_buku') ? $this->request->getVar('page_buku') : 1; // ubah 1
         $cari = $this->request->getVar('cari');
         if($cari){
-            $buku = $this->BukuModel->cari($cari);
+            $buku = $this->BukuModel->findBuku($cari); // ubah 1
         }else{
             $buku = $this->BukuModel->getBuku();
         }
